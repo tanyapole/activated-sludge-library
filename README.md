@@ -10,3 +10,11 @@ The main feature implemented in the library is the analysis of microscopy images
 ### How to install
 
 ### How to use
+```
+from PIL import Image
+import sludge
+
+analyzer = sludge.SludgeAnalyzer()
+img = Image.open(<path_to_image>)
+res = analyzer.predict(img) # result
+```
